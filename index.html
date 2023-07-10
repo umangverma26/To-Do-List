@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <script src="https://kit.fontawesome.com/1a0b15035f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1><i style="color: black;" class="fa-solid fa-list-check"></i> </i> To-Do List</h1>
+  
+  
+
+  <!-- Add task form -->
+  <form id="task-form">
+    <input type="text" style="border: 1px solid #ff004f; background-color: #b8e8ec;" id="task-input" placeholder="Enter task description">
+    <input style="background-color: #b8e8ec; border: 1px solid #ff004f;" type="date" id="task-deadline">
+    
+    <select style="border: 1px solid #ff004f;background-color: #b8e8ec; " id="task-priority">
+      <option style="background-color: #73da8d; " value="low">Low</option>
+      <option style="background-color: #f5ee87;" value="medium">Medium</option>
+      <option style="background-color: #e39e9e;" value="high">High</option>
+    </select>
+    <button id="btn" type="submit">Add Task</button>
+  </form>
+
+  <!-- Task list -->
+  <ul style="color: #0780e2;" id="task-list">Task List</ul>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
